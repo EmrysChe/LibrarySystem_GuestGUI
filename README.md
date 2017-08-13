@@ -1,0 +1,2 @@
+# LibrarySystem_GuestGUI
+基于Qt的图书管理系统普通用户操作界面
