@@ -27,83 +27,182 @@ QT_BEGIN_NAMESPACE
 class Ui_GuestGUIWidget
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout_6;
+    QSpacerItem *horizontalSpacer_11;
     QTableView *userInformationTableView;
+    QSpacerItem *horizontalSpacer_10;
+    QHBoxLayout *horizontalLayout_3;
+    QSpacerItem *horizontalSpacer_8;
+    QTableView *book1TableView;
+    QSpacerItem *horizontalSpacer_9;
+    QHBoxLayout *horizontalLayout_5;
+    QSpacerItem *horizontalSpacer_7;
+    QTableView *book2TableView;
+    QSpacerItem *horizontalSpacer_6;
+    QHBoxLayout *horizontalLayout_4;
+    QSpacerItem *horizontalSpacer_5;
     QTableView *bookInformationTableView;
+    QSpacerItem *horizontalSpacer_4;
     QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer_13;
+    QSpacerItem *horizontalSpacer_14;
     QLineEdit *searchBookLineEdit;
     QSpacerItem *horizontalSpacer;
     QPushButton *searchingButton;
     QPushButton *borrowButton;
     QPushButton *returnButton;
+    QSpacerItem *horizontalSpacer_12;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer_2;
     QPushButton *logOffButton;
-    QSpacerItem *horizontalSpacer_3;
     QPushButton *exitButton;
+    QSpacerItem *horizontalSpacer_3;
 
     void setupUi(QWidget *GuestGUIWidget)
     {
         if (GuestGUIWidget->objectName().isEmpty())
             GuestGUIWidget->setObjectName(QStringLiteral("GuestGUIWidget"));
-        GuestGUIWidget->resize(537, 452);
-        widget = new QWidget(GuestGUIWidget);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(20, 10, 502, 436));
-        verticalLayout = new QVBoxLayout(widget);
+        GuestGUIWidget->resize(548, 630);
+        layoutWidget = new QWidget(GuestGUIWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 531, 611));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        userInformationTableView = new QTableView(widget);
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setSpacing(6);
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        horizontalSpacer_11 = new QSpacerItem(15, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+
+        horizontalLayout_6->addItem(horizontalSpacer_11);
+
+        userInformationTableView = new QTableView(layoutWidget);
         userInformationTableView->setObjectName(QStringLiteral("userInformationTableView"));
-        userInformationTableView->setMinimumSize(QSize(500, 80));
-        userInformationTableView->setMaximumSize(QSize(500, 80));
+        userInformationTableView->setMinimumSize(QSize(220, 100));
+        userInformationTableView->setMaximumSize(QSize(220, 100));
 
-        verticalLayout->addWidget(userInformationTableView);
+        horizontalLayout_6->addWidget(userInformationTableView);
 
-        bookInformationTableView = new QTableView(widget);
+        horizontalSpacer_10 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_6->addItem(horizontalSpacer_10);
+
+
+        verticalLayout->addLayout(horizontalLayout_6);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_8);
+
+        book1TableView = new QTableView(layoutWidget);
+        book1TableView->setObjectName(QStringLiteral("book1TableView"));
+        book1TableView->setMinimumSize(QSize(500, 100));
+        book1TableView->setMaximumSize(QSize(500, 100));
+
+        horizontalLayout_3->addWidget(book1TableView);
+
+        horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_9);
+
+
+        verticalLayout->addLayout(horizontalLayout_3);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setSpacing(6);
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_7);
+
+        book2TableView = new QTableView(layoutWidget);
+        book2TableView->setObjectName(QStringLiteral("book2TableView"));
+        book2TableView->setMinimumSize(QSize(500, 100));
+        book2TableView->setMaximumSize(QSize(500, 100));
+
+        horizontalLayout_5->addWidget(book2TableView);
+
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_6);
+
+
+        verticalLayout->addLayout(horizontalLayout_5);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setSpacing(6);
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_4->addItem(horizontalSpacer_5);
+
+        bookInformationTableView = new QTableView(layoutWidget);
         bookInformationTableView->setObjectName(QStringLiteral("bookInformationTableView"));
-        bookInformationTableView->setMinimumSize(QSize(500, 200));
-        bookInformationTableView->setMaximumSize(QSize(500, 200));
+        bookInformationTableView->setMinimumSize(QSize(510, 200));
+        bookInformationTableView->setMaximumSize(QSize(510, 200));
 
-        verticalLayout->addWidget(bookInformationTableView);
+        horizontalLayout_4->addWidget(bookInformationTableView);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_4->addItem(horizontalSpacer_4);
+
+
+        verticalLayout->addLayout(horizontalLayout_4);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        searchBookLineEdit = new QLineEdit(widget);
+        horizontalSpacer_13 = new QSpacerItem(10, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_13);
+
+        horizontalSpacer_14 = new QSpacerItem(10, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_14);
+
+        searchBookLineEdit = new QLineEdit(layoutWidget);
         searchBookLineEdit->setObjectName(QStringLiteral("searchBookLineEdit"));
         searchBookLineEdit->setMinimumSize(QSize(200, 30));
         searchBookLineEdit->setMaximumSize(QSize(200, 30));
 
         horizontalLayout->addWidget(searchBookLineEdit);
 
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer = new QSpacerItem(65, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        searchingButton = new QPushButton(widget);
+        searchingButton = new QPushButton(layoutWidget);
         searchingButton->setObjectName(QStringLiteral("searchingButton"));
         searchingButton->setMinimumSize(QSize(70, 30));
         searchingButton->setMaximumSize(QSize(70, 30));
 
         horizontalLayout->addWidget(searchingButton);
 
-        borrowButton = new QPushButton(widget);
+        borrowButton = new QPushButton(layoutWidget);
         borrowButton->setObjectName(QStringLiteral("borrowButton"));
         borrowButton->setMinimumSize(QSize(70, 30));
         borrowButton->setMaximumSize(QSize(70, 30));
 
         horizontalLayout->addWidget(borrowButton);
 
-        returnButton = new QPushButton(widget);
+        returnButton = new QPushButton(layoutWidget);
         returnButton->setObjectName(QStringLiteral("returnButton"));
         returnButton->setMinimumSize(QSize(70, 30));
         returnButton->setMaximumSize(QSize(70, 30));
 
         horizontalLayout->addWidget(returnButton);
+
+        horizontalSpacer_12 = new QSpacerItem(40, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_12);
 
 
         verticalLayout->addLayout(horizontalLayout);
@@ -115,23 +214,23 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer_2);
 
-        logOffButton = new QPushButton(widget);
+        logOffButton = new QPushButton(layoutWidget);
         logOffButton->setObjectName(QStringLiteral("logOffButton"));
         logOffButton->setMinimumSize(QSize(70, 30));
         logOffButton->setMaximumSize(QSize(70, 30));
 
         horizontalLayout_2->addWidget(logOffButton);
 
-        horizontalSpacer_3 = new QSpacerItem(30, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer_3);
-
-        exitButton = new QPushButton(widget);
+        exitButton = new QPushButton(layoutWidget);
         exitButton->setObjectName(QStringLiteral("exitButton"));
         exitButton->setMinimumSize(QSize(70, 30));
         exitButton->setMaximumSize(QSize(70, 30));
 
         horizontalLayout_2->addWidget(exitButton);
+
+        horizontalSpacer_3 = new QSpacerItem(35, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_3);
 
 
         verticalLayout->addLayout(horizontalLayout_2);
