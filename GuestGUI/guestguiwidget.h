@@ -11,6 +11,7 @@
 #include <QDateTime>
 #include <QMouseEvent>
 #include <QPoint>
+#include <QHeaderView>
 
 #define SQLADDRESS "/home/emrys/test/test/LibrarySystem_GuestGUI/GuestGUI/librarian.db"
 

@@ -26,6 +26,7 @@ GuestGUIWidget::GuestGUIWidget(QWidget *parent) :
     ui->userInformationTableView->setColumnHidden(8,true);
     ui->userInformationTableView->setColumnHidden(9,true);
     ui->userInformationTableView->setColumnHidden(10,true);
+    ui->userInformationTableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 
     userbook1Model = new QSqlTableModel(this);
     userbook1Model->setTable("user");
@@ -40,6 +41,8 @@ GuestGUIWidget::GuestGUIWidget(QWidget *parent) :
     ui->book1TableView->setColumnHidden(8,true);
     ui->book1TableView->setColumnHidden(9,true);
     ui->book1TableView->setColumnHidden(10,true);
+    ui->book1TableView->setColumnWidth(5,150);
+    ui->book1TableView->setColumnWidth(6,150);
 
     userbook2Model = new QSqlTableModel(this);
     userbook2Model->setTable("user");
@@ -54,6 +57,8 @@ GuestGUIWidget::GuestGUIWidget(QWidget *parent) :
     ui->book2TableView->setColumnHidden(4,true);
     ui->book2TableView->setColumnHidden(5,true);
     ui->book2TableView->setColumnHidden(6,true);
+    ui->book2TableView->setColumnWidth(9,150);
+    ui->book2TableView->setColumnWidth(10,150);
 
     bookModel = new QSqlTableModel(this);
     bookModel->setTable("book");
