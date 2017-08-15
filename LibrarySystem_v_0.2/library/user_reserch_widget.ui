@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>user_reserch_widget</class>
+ <widget class="QWidget" name="user_reserch_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#connect_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#connect_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#connect_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton
+{
+	border-image:url(:/pic/pic/btn_close_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton:hover
+{
+	border-image:url(:/pic/pic/btn_close_highlight.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton:pressed
+{
+	border-image:url(:/pic/pic/btn_close_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#add_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#add_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#add_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#del_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#del_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#del_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#send_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#send_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#send_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#find_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#find_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#find_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#borrow_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#borrow_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#borrow_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-style:italic; color:#ffff00;&quot;&gt;书籍信息&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-style:italic; color:#ffff00;&quot;&gt;用户信息&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>0</y>
+     <width>41</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-1</y>
+     <width>891</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="pic.qrc">:/pic/pic/2.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="id_radioButton">
+   <property name="geometry">
+    <rect>
+     <x>81</x>
+     <y>471</y>
+     <width>47</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>id</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="name_radioButton">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>471</y>
+     <width>127</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>book_name</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="author_radioButton">
+   <property name="geometry">
+    <rect>
+     <x>269</x>
+     <y>471</y>
+     <width>136</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>book_author</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>240</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>add</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>510</y>
+     <width>231</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="find_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>500</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>find</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>240</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>del</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>550</y>
+     <width>163</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>用户账号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="id_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>551</y>
+     <width>163</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>300</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="cursorPosition">
+    <number>0</number>
+   </property>
+   <property name="placeholderText">
+    <string>请输入书本ID</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="borrow_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>540</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>return</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="send_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>485</y>
+     <width>163</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="send_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>794</x>
+     <y>480</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>send</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="connect_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>530</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>connect</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>579</width>
+     <height>181</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>579</width>
+     <height>181</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>612</x>
+     <y>62</y>
+     <width>254</width>
+     <height>401</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>id_radioButton</zorder>
+  <zorder>name_radioButton</zorder>
+  <zorder>author_radioButton</zorder>
+  <zorder>add_pushButton</zorder>
+  <zorder>input_lineEdit</zorder>
+  <zorder>find_pushButton</zorder>
+  <zorder>del_pushButton</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>id_lineEdit</zorder>
+  <zorder>borrow_pushButton</zorder>
+  <zorder>send_lineEdit</zorder>
+  <zorder>send_pushButton</zorder>
+  <zorder>connect_pushButton</zorder>
+  <zorder>tableView</zorder>
+  <zorder>tableView_2</zorder>
+  <zorder>listWidget</zorder>
+ </widget>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>user_reserch_widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>872</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>803</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

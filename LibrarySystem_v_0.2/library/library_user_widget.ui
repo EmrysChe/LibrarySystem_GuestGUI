@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>library_user_Widget</class>
+ <widget class="QWidget" name="library_user_Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>373</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>library_user_Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#login_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#login_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#login_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton_2
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton_2:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton_2:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#register_pushButton
+{
+	border-image:url(:/pic/pic/zhuce.png)0 0 0 0 strecth strecth
+}
+QPushButton#register_pushButton:hover
+{
+	border-image:url(:/pic/pic/zhuce_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#register_pushButton:pressed
+{
+	border-image:url(:/pic/pic/zhuce_press.png)0 0 0 0 strecth strecth
+}
+QPushButton#forget_pushButton
+{
+	border-image:url(:/pic/pic/mima.png)0 0 0 0 strecth strecth
+}
+QPushButton#forget_pushButton:hover
+{
+	border-image:url(:/pic/pic/mima_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#forget_pushButton:pressed
+{
+	border-image:url(:/pic/pic/mima_press.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>54</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>40</y>
+     <width>201</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-style:italic; color:#ffff00;&quot;&gt;图书管理系统&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>230</y>
+     <width>101</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>441</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="pic.qrc">:/pic/pic/beijing.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="register_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>272</x>
+     <y>117</y>
+     <width>47</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>190</y>
+     <width>85</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>管理员</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>103</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>普通用户</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>230</y>
+     <width>101</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>241</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>联系管理员</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="acc_num_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>112</y>
+     <width>163</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>151</y>
+     <width>163</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="forget_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>272</x>
+     <y>156</y>
+     <width>47</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_4</zorder>
+  <zorder>label_3</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>radioButton</zorder>
+  <zorder>radioButton_2</zorder>
+  <zorder>login_pushButton</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>password_lineEdit</zorder>
+  <zorder>acc_num_lineEdit</zorder>
+  <zorder>forget_pushButton</zorder>
+  <zorder>register_pushButton</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>library_user_Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>381</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

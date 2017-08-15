@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>pic/zhuce.png</file>
+        <file>pic/zhuce_press.png</file>
+        <file>pic/zhuce_hover.png</file>
+        <file>pic/mima.png</file>
+        <file>pic/mima_press.png</file>
+        <file>pic/mima_hover.png</file>
+        <file>pic/btn_mini_normal.png</file>
+        <file>pic/btn_mini_highlight.png</file>
+        <file>pic/btn_mini_down.png</file>
+        <file>pic/btn_close_normal.png</file>
+        <file>pic/btn_close_highlight.png</file>
+        <file>pic/beijing.jpg</file>
+        <file>pic/1.jpg</file>
+        <file>pic/btn_close_down.png</file>
+        <file>pic/button_login_normal.png</file>
+        <file>pic/button_login_hover.png</file>
+        <file>pic/button_login_down.png</file>
+        <file>pic/2.jpg</file>
+        <file>pic/3.jpg</file>
+    </qresource>
+</RCC>

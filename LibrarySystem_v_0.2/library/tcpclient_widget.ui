@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tcpClient_widget</class>
+ <widget class="QWidget" name="tcpClient_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>393</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#send_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#send_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#send_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#connect_pushButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#connect_pushButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#connect_pushButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton
+{
+	border-image:url(:/pic/pic/btn_close_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton:hover
+{
+	border-image:url(:/pic/pic/btn_close_highlight.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton:pressed
+{
+	border-image:url(:/pic/pic/btn_close_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton_2
+{
+	border-image:url(:/pic/pic/btn_mini_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton_2:hover
+{
+	border-image:url(:/pic/pic/btn_mini_highlight.png)0 0 0 0 strecth strecth
+}
+QPushButton#pushButton_2:pressed
+{
+	border-image:url(:/pic/pic/btn_mini_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#logInButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#logInButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#logInButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>41</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>0</y>
+     <width>41</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>341</width>
+     <height>231</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>270</y>
+     <width>131</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>account</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="connect_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>400</y>
+     <width>331</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>connect</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="send_lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="send_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>310</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>send</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="iplineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>350</y>
+     <width>163</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>127.0.0.1</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="portlineEdit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>350</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>60</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>8080</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>391</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="pic.qrc">:/pic/pic/1.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pswLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>270</y>
+     <width>131</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logInButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>270</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Log in</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>nameLineEdit</zorder>
+  <zorder>connect_pushButton</zorder>
+  <zorder>send_lineEdit</zorder>
+  <zorder>send_pushButton</zorder>
+  <zorder>iplineEdit</zorder>
+  <zorder>portlineEdit</zorder>
+  <zorder>pswLineEdit</zorder>
+  <zorder>logInButton</zorder>
+ </widget>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>tcpClient_widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>496</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -82,8 +82,8 @@ public:
 
         userInformationTableView = new QTableView(layoutWidget);
         userInformationTableView->setObjectName(QStringLiteral("userInformationTableView"));
-        userInformationTableView->setMinimumSize(QSize(220, 100));
-        userInformationTableView->setMaximumSize(QSize(220, 100));
+        userInformationTableView->setMinimumSize(QSize(235, 100));
+        userInformationTableView->setMaximumSize(QSize(235, 100));
 
         horizontalLayout_6->addWidget(userInformationTableView);
 
