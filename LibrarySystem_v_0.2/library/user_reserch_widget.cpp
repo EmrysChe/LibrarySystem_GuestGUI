@@ -18,6 +18,7 @@ user_reserch_widget::user_reserch_widget(QWidget *parent) :
     re_model->select();
     ui->tableView->setModel(re_model);
     ui->tableView->verticalHeader()->hide();
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 }
 
 user_reserch_widget::~user_reserch_widget()
@@ -320,4 +321,12 @@ void user_reserch_widget::slotError(QAbstractSocket::SocketError socketError)
 void user_reserch_widget::slotStateChanged(QAbstractSocket::SocketState socketChanged)
 {
         qDebug()<<socketChanged;
+}
+
+void user_reserch_widget::on_freshButton_clicked()
+{
+    user_model->select();
+    ui->tableView_2->setModel(user_model);
+    re_model->select();
+    ui->tableView->setModel(re_model);
 }

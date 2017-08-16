@@ -47,6 +47,7 @@ public:
     QTableView *tableView;
     QTableView *tableView_2;
     QListWidget *listWidget;
+    QPushButton *freshButton;
 
     void setupUi(QWidget *user_reserch_widget)
     {
@@ -138,6 +139,18 @@ public:
 "QPushButton#borrow_pushButton:pressed\n"
 "{\n"
 "	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth\n"
+"}\n"
+"QPushButton#freshButton\n"
+"{\n"
+"	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth\n"
+"}\n"
+"QPushButton#freshButton:hover\n"
+"{\n"
+"	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth\n"
+"}\n"
+"QPushButton#freshButton:pressed\n"
+"{\n"
+"	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth\n"
 "}"));
         label = new QLabel(user_reserch_widget);
         label->setObjectName(QStringLiteral("label"));
@@ -202,6 +215,9 @@ public:
         listWidget = new QListWidget(user_reserch_widget);
         listWidget->setObjectName(QStringLiteral("listWidget"));
         listWidget->setGeometry(QRect(612, 62, 254, 401));
+        freshButton = new QPushButton(user_reserch_widget);
+        freshButton->setObjectName(QStringLiteral("freshButton"));
+        freshButton->setGeometry(QRect(440, 500, 101, 41));
         label_3->raise();
         label->raise();
         label_2->raise();
@@ -222,6 +238,7 @@ public:
         tableView->raise();
         tableView_2->raise();
         listWidget->raise();
+        freshButton->raise();
 
         retranslateUi(user_reserch_widget);
         QObject::connect(pushButton, SIGNAL(clicked()), user_reserch_widget, SLOT(close()));
@@ -248,6 +265,7 @@ public:
         borrow_pushButton->setText(QApplication::translate("user_reserch_widget", "return", Q_NULLPTR));
         send_pushButton->setText(QApplication::translate("user_reserch_widget", "send", Q_NULLPTR));
         connect_pushButton->setText(QApplication::translate("user_reserch_widget", "connect", Q_NULLPTR));
+        freshButton->setText(QApplication::translate("user_reserch_widget", "fresh", Q_NULLPTR));
     } // retranslateUi
 
 };

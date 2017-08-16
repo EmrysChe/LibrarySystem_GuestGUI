@@ -17,6 +17,8 @@
 #include "tcp_server.h"
 #include "guestguiwidget.h"
 
+#define SQLADDRESS "/home/emrys/test/test/LibrarySystem_GuestGUI/LibrarySystem_v_0.2/library/library.db"
+
 class GuestGUIWidget;
 
 namespace Ui {

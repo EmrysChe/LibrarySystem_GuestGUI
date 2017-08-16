@@ -60,7 +60,9 @@ private slots:
     void slotError(QAbstractSocket::SocketError);
     void slotStateChanged(QAbstractSocket:: SocketState);
 
-private:
+    void on_freshButton_clicked();
+
+    private:
     Ui::user_reserch_widget *ui;
     QSqlTableModel *re_model;
     QSqlTableModel *user_model;

@@ -97,6 +97,18 @@ QPushButton#borrow_pushButton:hover
 QPushButton#borrow_pushButton:pressed
 {
 	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
+}
+QPushButton#freshButton
+{
+	border-image:url(:/pic/pic/button_login_normal.png)0 0 0 0 strecth strecth
+}
+QPushButton#freshButton:hover
+{
+	border-image:url(:/pic/pic/button_login_hover.png)0 0 0 0 strecth strecth
+}
+QPushButton#freshButton:pressed
+{
+	border-image:url(:/pic/pic/button_login_down.png)0 0 0 0 strecth strecth
 }</string>
   </property>
   <widget class="QLabel" name="label">
@@ -359,6 +371,19 @@ QPushButton#borrow_pushButton:pressed
     </rect>
    </property>
   </widget>
+  <widget class="QPushButton" name="freshButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>500</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>fresh</string>
+   </property>
+  </widget>
   <zorder>label_3</zorder>
   <zorder>label</zorder>
   <zorder>label_2</zorder>
@@ -379,6 +404,7 @@ QPushButton#borrow_pushButton:pressed
   <zorder>tableView</zorder>
   <zorder>tableView_2</zorder>
   <zorder>listWidget</zorder>
+  <zorder>freshButton</zorder>
  </widget>
  <resources>
   <include location="pic.qrc"/>
